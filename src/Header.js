@@ -27,7 +27,7 @@ function Header() {
           <spam className="nav_itemLineOne">Your</spam>
           <spam className="nav_itemLineTwo">Shop</spam>
         </div>
-        <div className="nav_item">
+        <div className="nav_itemBasket">
           <ShoppingBasketIcon className='itemBasket'/>
           <spam className="nav_itemLineTwo nav_basketCount">0</spam>
         </div>
