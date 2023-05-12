@@ -17,7 +17,7 @@ function Home() {
                         id="12321341"
                         title="TOMS Girls Classic Little Kids Workout Athletic and Training Shoes"
                         price={11.96}
-                        rating={5}
+                        rating={3}
                         image='https://m.media-amazon.com/images/I/51zYmflj3GL._AC_UY500_.jpg' 
                         />
                         <Product 
