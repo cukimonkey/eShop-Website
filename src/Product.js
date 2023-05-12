@@ -1,20 +1,20 @@
 import React from 'react';
 import "./Product.css";
 
-function Product(){
+function Product({is, title, image, price, rating}){
     return(
-        <div>
-            <div className="product">
+        <div >
+            <div className="product" >
                 <div className="product_info">
-                    <p>TOMS Girls Classic Little Kids Workout Athletic and Training Shoes</p>
+                    <p>{title}</p>
                     <p className="product_price">
                         <small>$</small>
-                        <strong>30</strong>
+                        <strong>{price}</strong>
                     </p>
                     <div className="product_rating">⭐️⭐️⭐️</div>
                 </div>
 
-                    <img src='https://m.media-amazon.com/images/I/51zYmflj3GL._AC_UY500_.jpg' 
+                    <img src={image} 
                     alt="products"/>
 
                     <button>Add to Basket</button>
