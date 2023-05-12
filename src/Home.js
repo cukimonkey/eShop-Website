@@ -9,16 +9,20 @@ function Home() {
         <div>
             <div className="home">
                 <div className="home_container">
+
                     <img src={MyImage} alt="cover" className="home_image" />
+
                     <div className="home_row">
                         <Product />
                         <Product />
                     </div>
+
                     <div className="home_row">
                           <Product />
                           <Product />
                           <Product />
                     </div>
+
                     <div className="home_row">
                            <Product />
                     </div>
