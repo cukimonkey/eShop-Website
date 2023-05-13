@@ -4,9 +4,14 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
 import {Link} from 'react-router-dom'
+import { useStateValue } from './StateProvider';
 
 
 function Nav() {
+
+  //import the datalayer and destructure the array
+  const [{basket}, dispatch] = useStateValue();
+
     return(
         <div className='nav'>
           <Link to="/" style={{textDecoration: 'none'}}>
@@ -34,7 +39,7 @@ function Nav() {
             <Link to="/checkout" style={{textDecoration: 'none'}}>
             <div className="nav_itemBasket">
               <ShoppingBasketIcon className='itemBasket'/>
-              <spam className="nav_itemLineTwo nav_basketCount">0</spam>
+              <spam className="nav_itemLineTwo nav_basketCount">{basket.lenght}</spam>
             </div>
             </Link>
 
