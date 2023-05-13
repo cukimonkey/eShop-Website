@@ -27,10 +27,12 @@ function Nav() {
           </div>
 
           <div className="nav_nav">
+            <Link to="/login" style={{textDecoration: 'none'}}>
             <div className="nav_item">
               <spam className="nav_itemLineOne">Hello Guest</spam>
               <spam className="nav_itemLineTwo">Sign In</spam>
             </div>
+            </Link >
             <div className="nav_item">
               <spam className="nav_itemLineOne">Your</spam>
               <spam className="nav_itemLineTwo">Shop</spam>
