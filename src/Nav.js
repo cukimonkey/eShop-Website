@@ -9,7 +9,7 @@ import { useStateValue } from './StateProvider';
 
 function Nav() {
 
-  //import the datalayer and destructure the array
+  // eslint-disable-next-line no-unused-vars
   const [{basket}, dispatch] = useStateValue();
 
     return(
@@ -39,7 +39,7 @@ function Nav() {
             <Link to="/checkout" style={{textDecoration: 'none'}}>
             <div className="nav_itemBasket">
               <ShoppingBasketIcon className='itemBasket'/>
-              <spam className="nav_itemLineTwo nav_basketCount">{basket.lenght}</spam>
+              <span className="nav__itemLineTwo nav__basketCount">{basket.length}</span>
             </div>
             </Link>
 

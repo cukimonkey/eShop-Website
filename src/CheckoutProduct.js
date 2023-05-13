@@ -1,31 +1,40 @@
 import React from "react";
 import "./CheckoutProduct.css"
+//import { useStateValue } from "./StateProvider";
 
-function Checkout() {
+// eslint-disable-next-line no-unused-vars
+function CheckoutProduct({id, image, title, price, rating}) {
+  //  const [{basket}, dispatch] = useStateValue();
+
     return (
         <div >
         <div className="checkoutProduct" >
-            <img src='https://m.media-amazon.com/images/I/51zYmflj3GL._AC_UY500_.jpg'
+            <img src={image}
                 alt="products" className="checkoutProduct__image"/>
 
             <div className="checkoutProduct__info">
-                <p className="checkoutProduct__title">TOMS Girls Classic Little Kids Workout Athletic and Training Shoes</p>
+                <p className="checkoutProduct__title">{title}</p>
 
                 <p className="checkoutProduct_price">
                     <small>$</small>
-                    <strong>56.99</strong>
+                    <strong>{price}</strong>
                 </p>
 
                 <div className="checkoutProduct__rating">
-                    <p>⭐️⭐️</p>
+                    {/* {JSON.stringify(rating)} */}
+                    {Array(rating)
+                    .fill()
+                    .map((_, i) => (
+                        <p>⭐</p>
+                    ))}
                 </div>
+
                 <button>Remove from Basket</button>
             </div>
 
-                
          </div>
     </div>
     )
 }
 
-export default Checkout;
+export default CheckoutProduct;
