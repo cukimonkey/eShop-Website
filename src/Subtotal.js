@@ -27,7 +27,7 @@ function Subtotal() {
                  value={getBasketTotal(basket)}
                  displayType={"text"}
                  thousandSeparator={true}
-                 
+
             />
         </div>
     )
